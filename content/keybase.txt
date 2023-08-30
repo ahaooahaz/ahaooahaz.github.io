@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ahaooahaz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ahaooahaz.github.io
+  * I am ahaooahaz (https://keybase.io/ahaooahaz) on keybase.
+  * I have a public key ASAXmkPtf_Qk2TGTJoEgBcrKwI2ZKmicFCnNBMujKlo8nQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101452fef774c2b45794ae1654e8d7f8f7b3e8660da0abb013627fa63b5c0c808a10a",
+      "host": "keybase.io",
+      "kid": "0120179a43ed7ff424d9319326812005cacac08d992a689c1429cd04cba32a5a3c9d0a",
+      "uid": "0464e780cfeb900f2ac4c12b59ee2219",
+      "username": "ahaooahaz"
+    },
+    "merkle_root": {
+      "ctime": 1692785560,
+      "hash": "5e0ace58208d89c5dfd01989d884dba5af7e2310e6a06ec22d671761266fc2f21e827447d51253f4965725457af185801acf9c645d37e8e64a48d066efa22d92",
+      "hash_meta": "71068242bac70c64f77d7f3a97abc97ae63a8e678f6492214190be96883272fd",
+      "seqno": 24842125
+    },
+    "service": {
+      "entropy": "KgZfKY+FAKG2yC3Ik9BHpbvm",
+      "hostname": "ahaooahaz.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.2"
+  },
+  "ctime": 1692785582,
+  "expire_in": 504576000,
+  "prev": "d76320b6d623326c9ef88fa121e46cd850ac846b6a4d1741a5b1c2e39e826fd0",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgF5pD7X/0JNkxkyaBIAXKysCNmSponBQpzQTLoypaPJ0Kp3BheWxvYWTESpcCCMQg12MgttYjMmye+I+hIeRs2FCshGtqTRdBpbHC456Cb9DEIGWXObvQUp2x6rC4jAxOH8CRH5ZUKiiesyCDNwlY/dnAAgHCo3NpZ8RASPRAau/kgHTSKJmYGO76wnwamJni7OyBYhsx1zokm6UjULa1XRzE+ZG9f4qAxkMBhIv5A9BARz2xyafGCS2iBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIH6QDpBNI4Bo4cL9W5kgQNhndLAuL5zTltvAFFs6hjtho3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ahaooahaz
+
+==================================================================

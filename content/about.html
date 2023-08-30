@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/33903789" type="image/x-icon">
+    <style>
+        body {
+            font-family: "Courier New", monospace;
+            font-size: 16px;
+            margin: 0 auto;
+            /* 水平居中 */
+            width: 60%;
+            /* 宽度为页面宽度的60% */
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-size: 24px;
+            /* 调整此值以增大或减小标题字体大小 */
+            text-align: center;
+        }
+
+        pre {
+            font-size: 16px;
+            /* 调整此值以增大或减小字体大小 */
+            line-height: 1.5;
+            /* 调整此值以改变行间距 */
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .pre-right {
+            text-align: right;
+        }
+    </style>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const formattedTime = now.toLocaleString();
+            document.getElementById('current-time').textContent = formattedTime;
+        }
+
+        function updateAge() {
+            const now = new Date();
+            const birthDate = new Date('1998-09-11');
+            const ageDiffMilliseconds = now - birthDate;
+
+            const ageDate = new Date(ageDiffMilliseconds);
+            const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+            document.getElementById('age').textContent = age;
+        }
+
+        
+        setInterval(updateTime, 1000); // 每隔1秒更新一次时间
+        setInterval(updateAge, 1000);
+    </script>
+</head>
+
+<body>
+    <h1>Hao Zhang / ahaooahaz</h1>
+    <div class="left"><strong>AGE</strong>: <span id="age"></span></div>
+    <div class="left"><strong>BRON IN</strong>: Shannxi, China</div>
+    <div class="left"><strong>LIVING NOW IN</strong>: BeiJing, China</div>
+    <div class="left"><strong>LANGUAGES</strong>: C, C++, Go</div>
+    <div class="left"><strong>GPG</strong>: <a href="https://keybase.io/ahaooahaz">594DE6A95912C607</a></div>
+    <div class="left"><strong>EMAIL</strong>: <a href="mailto:ahaooahaz@outlook.com">ahaooahaz@outlook.com</a></div>
+    <div class="left"><strong>GITHUB</strong>: <a href="https://github.com/ahaooahaz">ahaooahaz</a></div>
+
+<br/>
+<hr/>
+<div>
+<div class="left">- Sensetime, BeiJing, China.</div>
+<div class="right">21/07/2023 - <span id="current-time"></span></div>
+</div>
+<br/>
+<br/>
+<hr/>
+<br/>
+<div class="right">
+    <img src="https://www.easycounter.com/counter.php?ahaooahaz" border="0" alt="Hit Counters"></a>
+</div>
+</body>
+
+</html>
