@@ -8,11 +8,6 @@ tags:
   - technical
 ---
 
-<center>秦人不暇自哀</center>
-<center>而后人哀之</center>
-<center>后人哀之而不鉴之</center>
-<center>亦使后人而复哀后人也</center>
-
 <!--more-->
 
 ## 单例模式
