@@ -36,7 +36,7 @@ paginate = 9
   # uncomment the line below will disable darkmode by default.
   # uncomment and set value below to either "light" or "dark" to make default mode dark.
   defaultMode = "light" # Note that the UI control for toggling darkmode will remain in place. This way, the user can decide which mode they would like to use while browsing your website
-  logo = "" # if the value is an empty string, the site title will be shown instead
+  logo = "https://avatars.githubusercontent.com/u/33903789" # if the value is an empty string, the site title will be shown instead
   faviconsDir = "images/icons/" # with a trailing slash
   blogDir = "post" # edit
   enableGitalk = true

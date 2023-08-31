@@ -2,7 +2,7 @@
   url: about.html
 - item: Blog
   url: ""
-- item: Category
-  url: categories
+# - item: Category
+  # url: categories
 - item: Tag
   url: tags
