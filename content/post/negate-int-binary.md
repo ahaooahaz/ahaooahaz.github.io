@@ -1,11 +1,11 @@
 ---
 author: ahaooahaz
 image: https://source.unsplash.com/1600x900/?nature,sea,gta
-urlname: c41bc58f-52dd-4698-be85-c088fd8bf8b0-negate-int-binary
+urlname: negate-int-binary
 date: 2021-11-25 14:19:50
 title: 整型和浮点型的二进制存储与计算
 tags: 
-  - linux
+  - technical
 mathjax: true
 ---
 

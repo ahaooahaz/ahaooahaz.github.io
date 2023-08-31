@@ -3,8 +3,9 @@ author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/mmexport1603125604287.webp
 title: bash -c的$1不是第一个参数
 date: 2021-08-26 17:08:19
-tags: linux
-urlname: 6d9a55db-a700-414e-b8f4-338772d529db
+urlname: lua-questions
+tags:
+  - technical
 ---
 
 <img src="/images/qingdao-dahai-fanchaun.jpg" width="40%" height="40%"></img>

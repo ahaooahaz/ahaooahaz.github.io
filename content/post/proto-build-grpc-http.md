@@ -1,10 +1,11 @@
 ---
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/mmexport1602608119485.webp
-urlname: 6b980338-797b-4da9-a6a9-bd782110e110-proto-build-grpc-http
+urlname: proto-build-grpc-http
 date: 2021-11-02 14:51:07
 title: protobuf学习笔记
-tags: 工具
+tags:
+  - technical
 ---
 
 通过使用`protoc`工具及其插件可以通过编写`proto`文件的方式生成服务提供的接口，可以支持将`http`请求转发到对应的`grpc`实现中，并同时提供对入参的格式校验，真方便。

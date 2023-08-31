@@ -1,11 +1,11 @@
 ---
 author: ahaooahaz
 image: https://source.unsplash.com/1600x900/?nature,sea,gta
-urlname: c51d7a5d-4078-40fb-9cde-bd45ad5245dc-design-mode
+urlname: design-mode
 date: 2022-01-16 23:30:52
 title: 设计模式
 tags:
-  - design
+  - technical
 ---
 
 <center>秦人不暇自哀</center>

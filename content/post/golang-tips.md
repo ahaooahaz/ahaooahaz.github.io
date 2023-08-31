@@ -1,10 +1,11 @@
 ---
 author: ahaooahaz
 image: https://source.unsplash.com/1600x900/?nature,sea,gta
-urlname: fd738c75-2182-4468-9c2f-88a3645baf2d-go-tips
+urlname: golang-tips
 date: 2021-10-12 17:07:18
 title: Golang学习笔记
-tags: golang
+tags:
+  - technical
 ---
 
 <img src="/images/beijing-yonghegong-wanshang.jpg" width="40%" height="40%"></img>

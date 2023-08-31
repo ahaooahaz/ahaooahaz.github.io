@@ -1,12 +1,11 @@
 ---
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/1690861871079.webp
-urlname: 14ef6d8d-ac5d-4810-af71-9b4fecb49521-tcpdump
+urlname: tcpdump
 date: 2022-07-06 15:06:37
 title: TCPDUMP学习笔记
 tags:
-  - linux
-  - tools
+  - technical
 ---
 
 在Linux系统上的抓包工具。

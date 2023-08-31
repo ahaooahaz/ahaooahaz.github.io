@@ -1,11 +1,11 @@
 ---
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/mmexport1601820392368.webp
-urlname: 1ae30e95-c2a0-48a3-91ee-332282427256-lambdacpp
+urlname: lambdacpp
 date: 2023-03-16 15:47:57
 title: cpp lambda
 tags:
-  - cpp
+  - technical
 ---
 
 # lambda格式

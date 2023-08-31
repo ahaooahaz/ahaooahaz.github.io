@@ -4,7 +4,8 @@ image: https://source.unsplash.com/1600x900/?nature,sea,gta
 urlname: e5deb14e-9d99-4709-b762-81a12c743a2c-gocgo
 date: 2021-09-10 18:15:56
 title: Golang和C语言之间的互相调用
-tags: golang
+tags:
+  - technical
 ---
 
 <img src="/images/wuhan-huanghelou.jpg" width="40%" height="40%"></img>

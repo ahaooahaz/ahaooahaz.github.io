@@ -1,12 +1,11 @@
 ---
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/2021_10_28_093909975.webp
-urlname: 8461fa08-4f19-4a10-8619-1713204db0fa-here-string-here-decuments
+urlname: here-string-here-decuments
 date: 2023-03-23 17:36:10
 title: Here Document & Here String
 tags:
-  - linux
-  - shell
+  - technical
 ---
 
 # Here Documents

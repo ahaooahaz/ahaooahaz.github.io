@@ -1,12 +1,11 @@
 ---
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/1690861870888.webp
-urlname: 70b6eeef-c7e4-4297-9690-52977905ce84-gpg-failed
+urlname: gpg-failed
 date: 2021-11-18 14:31:27
 title: GPG学习笔记
 tags: 
-  - linux
-  - crypt
+  - technical
 ---
 
 keep your secret.

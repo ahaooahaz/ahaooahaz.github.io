@@ -1,12 +1,11 @@
 ---
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/1690861871031.webp
-urlname: 174eedd6-7fb0-465e-98f3-a0169597b3d2-helm-study
+urlname: helm-study
 date: 2022-10-10 10:53:37
 title: helm学习笔记
 tags:
-  - helm
-  - k8s
+  - technical
 ---
 
 helm学习笔记。

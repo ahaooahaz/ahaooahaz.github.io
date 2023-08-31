@@ -1,12 +1,11 @@
 ---
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/IMG_20201003_180559.webp
-urlname: 44951c01-fefb-4ee9-bca9-6310e35a472f-cmake-learn
+urlname: cmake-learn
 date: 2022-09-27 10:13:42
 title: cmake学习笔记
 tags:
-  - cmake
-  - cpp
+  - technical
 ---
 
 内容包括cmake语法以及部分函数的使用方法。

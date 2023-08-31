@@ -1,11 +1,11 @@
 ---
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/1690861870847.webp
-urlname: 69b7cc57-8670-479b-9f42-f15e02cd1206-docker-volume
+urlname: docker-volume
 date: 2021-12-29 11:01:00
 title: 在容器中运行容器以及目录挂载
 tags: 
-  - docker
+  - technical
 ---
 
 在容器中运行容器的方式：

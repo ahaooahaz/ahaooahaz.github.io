@@ -3,9 +3,9 @@ author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/IMG_20201004_154300.webp
 title: lua学习笔记
 date: 2021-08-04 17:20:58
-urlname: ba915f98-0481-41c6-8b12-35ca406d5103
+urlname: bash-c-first-arg
 tags: 
-  - lua
+  - technical
 ---
 
 <img src="/images/qingdao-dahai-jiaoshi.jpg" width="40%" height="40%"></img>
