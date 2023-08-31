@@ -6,7 +6,7 @@ theme = ["github.com/ahaooahaz/newsroom"] # edit this if you'ld rather use a for
 # theme = "newsroom"
 author = "ahaooahaz"
 canonifyurls = true
-paginate = 6
+paginate = 9
 
 [markup]
   [markup.goldmark.renderer]
@@ -14,14 +14,14 @@ paginate = 6
     unsafe = false # change to true to enable inclusion of rawHTML and math functions
     xhtml = false
   [markup.highlight]
-    codeFences = false
+    codeFences = true
     guessSyntax = false
     hl_Lines = ""
     lineNoStart = 1
     lineNos = true
     lineNumbersInTable = false
-    noClasses = false
-    tabWidth = 2
+    noClasses = true
+    tabWidth = 4
 
 # If you want to use disqus, uncomment the line below
 # disqusShortname = "yourdiscussshortname"
@@ -32,7 +32,7 @@ paginate = 6
   ga_analytics = "$GOOGLE_ANALYTICS" # google analytics ID e.g UA-116386578-1
   # ga_verify = "" # google verification code e.g 5jb-rxeBfITeJQKOuUss3ud6FPGTxXkCho-ZN5qlrZg
   # twitter = "" # twitter handle e.g @weru
-  # mainSections = ["blog", "docs"] see https://gohugo.io/functions/where/#mainsections
+  # mainSections = ["blog"] # see https://gohugo.io/functions/where/#mainsections
   # uncomment the line below will disable darkmode by default.
   # uncomment and set value below to either "light" or "dark" to make default mode dark.
   defaultMode = "light" # Note that the UI control for toggling darkmode will remain in place. This way, the user can decide which mode they would like to use while browsing your website
