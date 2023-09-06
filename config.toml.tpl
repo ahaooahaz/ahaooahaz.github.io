@@ -1,5 +1,5 @@
 baseurl = "https://ahaooahaz.github.io/"  # Include trailing slash
-title = "AH.OI"
+title = "AHAOOAHAZ"
 # this example loads the theme as hugo module
 # comment out line below, and uncomment the line after it if you prefer to load the theme normally
 theme = ["github.com/ahaooahaz/newsroom"] # edit this if you'ld rather use a fork of this repo
@@ -15,13 +15,13 @@ paginate = 9
     xhtml = false
   [markup.highlight]
     codeFences = true
-    guessSyntax = false
+    guessSyntax = true
     hl_Lines = ""
     lineNoStart = 1
     lineNos = true
     lineNumbersInTable = false
     noClasses = true
-    tabWidth = 4
+    tabWidth = 2
 
 # If you want to use disqus, uncomment the line below
 # disqusShortname = "yourdiscussshortname"
@@ -36,10 +36,11 @@ paginate = 9
   # uncomment the line below will disable darkmode by default.
   # uncomment and set value below to either "light" or "dark" to make default mode dark.
   defaultMode = "light" # Note that the UI control for toggling darkmode will remain in place. This way, the user can decide which mode they would like to use while browsing your website
-  logo = "https://avatars.githubusercontent.com/u/33903789" # if the value is an empty string, the site title will be shown instead
+  logo = "" # if the value is an empty string, the site title will be shown instead
   faviconsDir = "images/icons/" # with a trailing slash
   blogDir = "post" # edit
   enableGitalk = true
+  email = "ahaooahaz@outlook.com"
 
 [params.gitalk] 
     clientID = "$GITALK_CLIENT_ID" # Your client ID

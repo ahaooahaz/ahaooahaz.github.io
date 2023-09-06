@@ -1,8 +1,18 @@
-- item: About
-  url: about.html
-- item: Blog
+- item: ABOUT
+  url: about/EN/
+  icon: "fa fa-user"
+- item: BLOG
   url: ""
-# - item: Category
-  # url: categories
-- item: Tag
+  icon: "fa fa-link"
+- item: TAG
   url: tags
+  icon: "fa fa-tag"
+- item: GITHUB
+  url: https://github.com/ahaooahaz
+  icon: "fa fa-github"
+- item: V2EX
+  url: https://www.v2ex.com/?r=ahaooahaz
+  icon: "fa fa-link"
+- item: RSS
+  url: post/index.xml
+  icon: "fa fa-rss"
