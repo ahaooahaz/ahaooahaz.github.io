@@ -1,0 +1,3 @@
+[submodule "themes/newsroom"]
+	path = themes/newsroom
+	url = ../newsroom.git

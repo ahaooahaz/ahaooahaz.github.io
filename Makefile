@@ -1,7 +1,9 @@
+export GIT_HASH := $(shell git rev-parse --short HEAD)
+
 all: env build
 
 env:
-	@envsubst < config.toml.tpl > config.toml
+	@envsubst < config.template.toml > config.toml
 build:
 	@hugo server -D
 
