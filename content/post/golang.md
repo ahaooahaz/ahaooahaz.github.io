@@ -1,6 +1,6 @@
 ---
 author: ahaooahaz
-image: https://source.unsplash.com/1600x900/?nature,sea,gta
+image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/1690861870967.webp
 urlname: golang
 date: 2021-10-12 17:07:18
 title: GOLANG

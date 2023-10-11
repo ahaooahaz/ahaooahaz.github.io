@@ -1,6 +1,6 @@
 ---
 author: ahaooahaz
-image: https://source.unsplash.com/1600x900/?nature,sea,gta
+image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/IMG_20201003_180559.webp
 urlname: single-mode
 date: 2022-01-16 23:30:52
 title: 单例模式
