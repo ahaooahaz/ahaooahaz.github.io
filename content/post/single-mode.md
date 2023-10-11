@@ -1,23 +1,23 @@
 ---
 author: ahaooahaz
 image: https://source.unsplash.com/1600x900/?nature,sea,gta
-urlname: design-mode
+urlname: single-mode
 date: 2022-01-16 23:30:52
-title: 设计模式
+title: 单例模式
 tags:
   - technical
 ---
 
 <!--more-->
 
-## 单例模式
+# 单例模式
 
 程序中只存在一个单独的对象，单例模式的写法分为两种:
 
 - 懒汉模式: 在使用的时候才创建。
 - 饿汉模式: 在程序启动时就创建。
 
-### 懒汉模式
+## 懒汉模式
 
 ```cpp
 #define sync() __asm__ volatile ("lwsync")
@@ -48,14 +48,14 @@ class Instance {
 };
 ```
 
-#### double check
+### double check
 
 两次判断的意义在于两方面:
 
 1. 效率: 避免并发时单次判断需要重复对互斥锁的加解锁操作
 2. 安全: 获取单例对象的并发安全性
 
-#### sync
+### sync
 
 sync需要保证sync之后作用域的代码不会因为编译器的优化导致执行顺序的改变。
 
@@ -68,7 +68,7 @@ sync需要保证sync之后作用域的代码不会因为编译器的优化导致
 其中，2和3的执行顺序是可以被改变的，当3先与2执行时，会产生`_Inst!=nullptr`且并未调用构造函数的现象。
 
 
-### 懒汉模式
+## 饿汉模式
 
 ```cpp
 

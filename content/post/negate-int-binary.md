@@ -3,7 +3,7 @@ author: ahaooahaz
 image: https://source.unsplash.com/1600x900/?nature,sea,gta
 urlname: negate-int-binary
 date: 2021-11-25 14:19:50
-title: 整型和浮点型的二进制存储与计算
+title: 数字存储与计算
 tags: 
   - technical
 mathjax: true

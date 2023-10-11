@@ -3,16 +3,14 @@ author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/1690861871079.webp
 urlname: tcpdump
 date: 2022-07-06 15:06:37
-title: TCPDUMP学习笔记
+title: TCPDUMP
 tags:
   - technical
 ---
 
-在Linux系统上的抓包工具。
-
 <!--more-->
 
-1. 在什么都不知道的情况下，就是想抓取当前机器上所有的跟TCPDUMP有关的包，也不管能不能看懂，应该这样做：
+1. 在什么都不知道的情况下，就是想抓取当前机器上所有的跟TCPDUMP有关的包，应该这样做：
 `sudo tcpdump`，抓取主机上第一块网卡的所有数据包，此时默认只显示数据包的头部，抓到的数据格式为`[时间] [数据包协议] [源IP].[源端口] > [目标IP].[目标端口] [目标地址协议] [协议详细信息]`，通过`CTRL C`停止抓包后，会生成该时段抓拍的统计信息。
 
 2. 当我想指定抓取某个网卡上的数据包时：
