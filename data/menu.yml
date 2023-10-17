@@ -9,10 +9,10 @@
   icon: "fa fa-tag"
 - item: GITHUB
   url: https://github.com/ahaooahaz
-  icon: "fa fa-github"
+  icon: "fa-brands fa-github"
 - item: V2EX
   url: https://www.v2ex.com/?r=ahaooahaz
   icon: "fa fa-link"
 - item: RSS
-  url: post/index.xml
+  url: /index.xml
   icon: "fa fa-rss"

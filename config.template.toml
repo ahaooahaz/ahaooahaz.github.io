@@ -58,3 +58,6 @@ perPage = 15                           # Pagination size, with maximum 100.
 pagerDirection = "last"                # Comment sorting direction, available values are 'last' and 'first'.
 createIssueManually = false            # If it is 'false', it is auto to make a GitHub issue when the administrators login.
 distractionFreeMode = false            # Enable hot key (cmd|ctrl + enter) submit comment.
+
+[permalinks]
+post = "/:title"
