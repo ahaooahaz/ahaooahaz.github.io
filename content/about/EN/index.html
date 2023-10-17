@@ -27,12 +27,25 @@
             /* 调整此值以改变行间距 */
         }
 
-        .left {
-            text-align: left;
+        p {
+            margin-top: 0%;
+            margin-bottom: 0%;
         }
 
-        .right {
+        .container {
+            display: flex;
+        }
+
+        .box-right {
+            width: 50%;
+            display: inline-block;
             text-align: right;
+        }
+
+        .box-left {
+            width: 50%;
+            display: inline-block;
+            text-align: left;
         }
 
         .pre-right {
@@ -42,8 +55,18 @@
     <script>
         function updateTime() {
             const now = new Date();
-            const formattedTime = now.toLocaleString();
-            document.getElementById('current-time').textContent = formattedTime;
+            const options = {
+                year: 'numeric',
+                month: '2-digit', // 可以使用 'numeric' 以获取数字格式的月份
+                day: '2-digit',
+                hour12: false, // 这将强制使用24小时制
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric'
+            };
+
+            const formatter = new Intl.DateTimeFormat('zh-CN', options);
+            document.getElementById('current-time').textContent = formatter.format(now);
         }
 
         function updateAge() {
@@ -56,7 +79,7 @@
             document.getElementById('age').textContent = age;
         }
 
-        
+
         setInterval(updateTime, 1000); // 每隔1秒更新一次时间
         setInterval(updateAge, 1000);
     </script>
@@ -64,27 +87,33 @@
 
 <body>
     <h1>Hao Zhang / ahaooahaz</h1>
-    <div class="left"><strong>AGE</strong>: <span id="age"></span></div>
-    <div class="left"><strong>BRON IN</strong>: Shannxi, China</div>
-    <div class="left"><strong>LIVING NOW IN</strong>: BeiJing, China</div>
-    <div class="left"><strong>LANGUAGES</strong>: C, C++, Go</div>
-    <div class="left"><strong>GPG</strong>: <a href="https://keybase.io/ahaooahaz">594DE6A95912C607</a></div>
-    <div class="left"><strong>EMAIL</strong>: <a href="mailto:ahaooahaz@outlook.com">ahaooahaz@outlook.com</a></div>
-    <div class="left"><strong>GITHUB</strong>: <a href="https://github.com/ahaooahaz">ahaooahaz</a></div>
+    <div class="container">
+        <div class="box-left">
+            <p><strong>AGE</strong>: <span id="age"></span></p>
+            <p><strong>BRON IN</strong>: Shannxi, China</p>
+            <p><strong>LIVING NOW IN</strong>: BeiJing, China</p>
+            <p><strong>LANGUAGES</strong>: C, C++, Go</p>
+            <p><strong>GPG</strong>: <a href="https://keybase.io/ahaooahaz">594DE6A95912C607</a></p>
+            <p><strong>EMAIL</strong>: <a href="mailto:ahaooahaz@outlook.com">ahaooahaz@outlook.com</a></p>
+            <p><strong>GITHUB</strong>: <a href="https://github.com/ahaooahaz">ahaooahaz</a></p>
+        </div>
+    </div>
 
 <br/>
 <hr/>
-<div>
-<div class="left">- Sensetime, BeiJing, China.</div>
-<div class="right">21/07/2023 - <span id="current-time"></span></div>
+<div class="container">
+<div class="box-left">
+    <p>- Development Engineer. Sensetime, BeiJing, China.</p>
+    <p>- Xi'an University of Science and Technology, China.</p>
+</div>
+
+<div class="box-right">
+    <p>2020/07/21 - <span id="current-time"></span></p>
+    <p>2016/09/11 - 2023/06/01</p>
+</div>
 </div>
 <br/>
 <br/>
-<hr/>
-<br/>
-<div class="right">
-    <img src="https://www.easycounter.com/counter.php?ahaooahaz" border="0" alt="Hit Counters"></a>
-</div>
 </body>
 
 </html>
