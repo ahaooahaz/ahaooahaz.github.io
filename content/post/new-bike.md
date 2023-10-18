@@ -6,7 +6,7 @@ date: 2023-10-18T23:08:52+08:00
 title: "买了一辆自行车"
 tags:
   - life
-draft: true
+draft: false
 ---
 
 美利达斯特拉95D
