@@ -60,4 +60,4 @@ createIssueManually = false            # If it is 'false', it is auto to make a 
 distractionFreeMode = false            # Enable hot key (cmd|ctrl + enter) submit comment.
 
 [permalinks]
-post = "/:urlname"
+post = "/:slug"

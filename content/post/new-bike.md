@@ -1,9 +1,10 @@
 ---
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/new-bike.webp
-urlname: "new-bike"
+urlname: new-bike
+slug: new-bike
 date: 2023-10-18T23:08:52+08:00
-title: "买了一辆自行车"
+title: 买了一辆自行车
 tags:
   - life
 draft: false

@@ -2,6 +2,7 @@
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/1690861871079.webp
 urlname: tcpdump
+slug: tcpdump
 date: 2022-07-06 15:06:37
 title: TCPDUMP
 tags:

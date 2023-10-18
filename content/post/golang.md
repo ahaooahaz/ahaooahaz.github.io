@@ -2,6 +2,7 @@
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/1690861870967.webp
 urlname: golang
+slug: golang
 date: 2021-10-12 17:07:18
 title: GOLANG
 tags:

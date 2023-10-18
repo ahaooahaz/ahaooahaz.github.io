@@ -2,6 +2,7 @@
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/IMG_20201003_180559.webp
 urlname: single-mode
+slug: single-mode
 date: 2022-01-16 23:30:52
 title: 单例模式
 tags:

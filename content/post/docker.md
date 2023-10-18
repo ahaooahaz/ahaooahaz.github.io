@@ -2,6 +2,7 @@
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/1690861870847.webp
 urlname: docker
+slug: docker
 date: 2021-12-29 11:01:00
 title: DOCKER
 tags: 

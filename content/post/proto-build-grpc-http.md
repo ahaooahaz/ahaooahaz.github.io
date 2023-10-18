@@ -2,6 +2,7 @@
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/mmexport1602608119485.webp
 urlname: proto-build-grpc-http
+slug: proto-build-grpc-http
 date: 2021-11-02 14:51:07
 title: 用Protobuf定义RPC和HTTP服务
 tags:

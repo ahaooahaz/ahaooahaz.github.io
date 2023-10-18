@@ -2,6 +2,7 @@
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/2021_10_28_093909975.webp
 urlname: shell-qa
+slug: shell-qa
 date: 2023-03-23 17:36:10
 title: SHELL-QA
 tags:
