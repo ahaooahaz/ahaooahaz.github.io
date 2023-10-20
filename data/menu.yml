@@ -3,7 +3,7 @@
   icon: "fa fa-user"
 - item: BLOG
   url: ""
-  icon: "fa fa-link"
+  icon: "fa-brands fa-blogger-b"
 - item: TAG
   url: tags
   icon: "fa fa-tag"
@@ -12,7 +12,7 @@
   icon: "fa-brands fa-github"
 - item: V2EX
   url: https://www.v2ex.com/?r=ahaooahaz
-  icon: "fa fa-link"
+  icon: "fa-solid fa-v"
 - item: RSS
   url: /index.xml
   icon: "fa fa-rss"
