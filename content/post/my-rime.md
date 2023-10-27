@@ -77,4 +77,9 @@ patch:
 
 ## 更换快捷键
 
-ctrl+\`和vscode的快捷键冲突了, 把rime的快捷键改掉.
+ctrl+\`和vscode的快捷键冲突了, 把rime的快捷键改掉, 删掉rime中ctrl+`这个快捷键, F4有相同功能, 删除~/.config/ibus/rime/default.yaml中的Control+grave这个快捷键重新部署.
+
+## docker wechat/wxwork 支持
+
+切换之后发现docker跑的微信和企业微信用不了了, 原因是因为之前启动的时候配置的是fcitx输入源, 改成ibus就行了.
+
