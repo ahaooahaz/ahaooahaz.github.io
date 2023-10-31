@@ -45,19 +45,81 @@ Setting -> Region&Language -> Manager Installed Languages -> ibus.
 
 ### 快捷键
 
-ctrl+\`和vscode的快捷键冲突了，把rime的快捷键改掉，删掉rime中ctrl+\`这个快捷键，F4有相同功能，删除~/.config/ibus/rime/default.yaml中的Control+grave这个快捷键重新部署。
+`ctrl+\``与vscode打开terminal冲突修改，~/.config/ibus/rime/default.custom.yaml，只保留F4为打开设置菜单。
+
+```yaml
+patch:
+    hotkeys:
+    - F4
+```
+
+在设置菜单中默认使用全角的`／`符号作为分隔符，修改为半角`/`符号。
+
+```yaml
+patch:
+  switcher:
+    # 用半角作为设置菜单中的分隔符
+    option_list_separator: "/"
+```
+
+通过`ctrl+hjkl`在侯选菜单中切换选项，Enter将选中文字输出，使用`[]`分页，Tab向下选中。
+
+```yaml
+patch:
+  key_binder/bindings:
+    # 使用Enter上屏选中的文字
+    - when: has_menu
+      accept: Return
+      send: space
+    # 使用'[]'上下翻页
+    - when: paging
+      accept: bracketleft
+      send: Page_Up
+    - when: has_menu
+      accept: bracketright
+      send: Page_Down
+    # 选词时，通过ctrl+hjkl移动选词
+    - accept: "Control+k"
+      send: "Up"
+      when: "composing"
+    - accept: "Control+j"
+      send: "Down"
+      when: "composing"
+    - accept: "Control+h"
+      send: "Left"
+      when: "composing"
+    - accept: "Control+l"
+      send: "Right"
+      when: "composing"
+    - accept: "Tab"
+      send: "Down"
+      when: "has_menu"
+```
+
+初始使用英文输入模式，在选中的对应输入策略下修改自定义配置文件。eg: 朙月拼音简体字: `~/.config/ibus/rime/luna_pinyin_simp.custom.yaml`
+
+```yaml
+patch:
+  # 默认英文输入模式
+  "switches/@0/reset": 1
+```
 
 ### 中英文切换
 
-TODO ...
+修改在中文模式下输入了一大段文字后，切换到英文模式的行为，同样在~/.config/ibus/rime/default.custom.yaml中修改。
 
-### emoji支持
-
-TODO ...
-
-### 自定义词典
-
-TODO ...
+```yaml
+patch:
+  # inline_ascii: 在输入法的临时英文编辑区内输入字母、数字、符号、空格等，回车上屏后自动复位到中文
+  # commit_code: 已输入的编码字符上屏并切换至西文输入模式
+  # commit_text: 已输入的候选文字上屏并切换至西文输入模式
+  # clear: 丢弃已输入的内容并切换至西文输入模式
+  # noop: 屏蔽该切换键
+  ascii_composer/switch_key:
+    Caps_Lock: commit_text
+    Shift_R: commit_code
+    Shift_L: commit_code
+```
 
 ## 切换字体
 
@@ -68,4 +130,4 @@ TODO ...
 
 切换之后发现docker跑的微信和企业微信用不了了，原因是因为之前启动的时候配置的是fcitx输入源，改成ibus就行了。
 
-自定义的配置保存在(github repo)[https://github.com/ahaooahaz/Annal/tree/master/configs/rime]。
+*配置保存在[GitHub Repo](https://github.com/ahaooahaz/Annal/tree/master/configs/rime)*
