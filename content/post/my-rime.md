@@ -72,7 +72,7 @@ patch:
       accept: Return
       send: space
     # 使用'[]'上下翻页
-    - when: paging
+    - when: has_menu
       accept: bracketleft
       send: Page_Up
     - when: has_menu
@@ -120,6 +120,10 @@ patch:
     Shift_R: commit_code
     Shift_L: commit_code
 ```
+
+### emoji支持
+
+配置好emoji之后，在terminal中输入emoji子符时，末尾会出现`<fe0f>`字符，这个通过在`.zshrc`中加入`setopt COMBINING_CHARS`解决。
 
 ## 切换字体
 
