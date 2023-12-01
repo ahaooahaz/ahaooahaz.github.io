@@ -6,7 +6,7 @@ slug: "my-rime"
 date: 2023-10-27T19:40:35+08:00
 title: "Rime"
 tags:
-    - technical
+    - tools
 draft: false
 ---
 
