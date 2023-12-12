@@ -1,16 +1,18 @@
 ---
 author: ahaooahaz
-image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/firefox-google.webp
-urlname: "firefox"
-slug: "firefox"
+image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/firefox-host.webp
+urlname: firefox
+slug: firefox
 date: 2023-12-01T16:56:39+08:00
-title: "把CHROME换成了FIREFOX"
+title: 把CHROME换成了FIREFOX
 tags:
   - tools
 draft: false
 ---
 
 <!--more-->
+
+# 1
 
 一直在用CHROME有点腻了，最主要的原因还是觉得CHROME上面标题栏+输入框+标签列在最上面占用太宽了，所以一直依赖都是把标签隐藏起来，用的时候再打开，但还是觉得不够精简。看到一篇文章写了FIREFOX可以把最顶层的标题栏隐藏掉，所以换FIREFOX。
 
@@ -37,6 +39,19 @@ draft: false
 重启FIREFOX即可。
 
 现在隐藏掉标签栏，浏览器上面只有一个输入框宽度了。
+
+## 2
+
+[firefoxcss-store](https://firefoxcss-store.github.io/)有很多现成的方案，从上面找了两个修改成自己想要的样子了。
+
+- 标签栏和地址栏合并一行
+- 不修改主题
+- 标签栏透明且隐藏，鼠标聚焦时显示
+
+![hidden tab](https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/firefox-tab.gif)
+
+配置目录: https://github.com/ahaooahaz/cascade
+
 
 参考链接:
 - https://taoshu.in/firefox/vertical-tabs.html
