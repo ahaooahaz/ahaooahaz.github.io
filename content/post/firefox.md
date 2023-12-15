@@ -48,7 +48,7 @@ draft: false
 - 不修改主题
 - 标签栏透明且隐藏，鼠标聚焦时显示
 
-![hidden tab](https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/firefox-tab.gif)
+![hidden tab](https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/firefox-tab-full.gif)
 
 配置目录: https://github.com/ahaooahaz/cascade
 
