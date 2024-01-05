@@ -1,10 +1,10 @@
 ---
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/firefox-host.webp
-urlname: firefox
-slug: firefox
+urlname: browser
+slug: browser
 date: 2023-12-01T16:56:39+08:00
-title: 把CHROME换成了FIREFOX
+title: Browser
 tags:
   - tools
 draft: false
@@ -40,7 +40,7 @@ draft: false
 
 现在隐藏掉标签栏，浏览器上面只有一个输入框宽度了。
 
-## 2
+# 2
 
 [firefoxcss-store](https://firefoxcss-store.github.io/)有很多现成的方案，从上面找了两个修改成自己想要的样子了。
 
@@ -55,3 +55,7 @@ draft: false
 
 参考链接:
 - https://taoshu.in/firefox/vertical-tabs.html
+
+# NOW BRAVE
+
+最终又换了brave，因为firefox打开一些跳转级很多的页面时能明显感觉到比chrome慢很多，😥️。
