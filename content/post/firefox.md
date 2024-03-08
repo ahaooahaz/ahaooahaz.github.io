@@ -58,4 +58,4 @@ draft: false
 
 # NOW BRAVE
 
-最终又换了brave，因为firefox打开一些跳转级很多的页面时能明显感觉到比chrome慢很多。😥️
+最终又换了brave，因为firefox打开一些跳转级很多的页面时能明显感觉到比chrome慢很多。
