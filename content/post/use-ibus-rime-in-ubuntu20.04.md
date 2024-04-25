@@ -15,6 +15,8 @@ draft: false
 
 [rime-ice](https://github.com/iDvel/rime-ice)是一个长期维护的中文词库，可以参考配置。[我的配置方案](https://github.com/ahaooahaz/Annal/tree/master/configs/rime)截取了其中的一部分，删掉了一些不常用的功能。
 
+# 问题
+
 系统升级到ubuntu20.04之后，在浏览器和一些app中不能法切换ibus输入法了，只能使用fcitx来输入中文，执行`env | grep -E 'XMOD|_IM'`结果为：
 ```
 GLFW_IM_MODULE=ibus
