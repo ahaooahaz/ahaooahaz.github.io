@@ -16,6 +16,6 @@
 - item: RSS
   url: /index.xml
   icon: "fa fa-rss"
-- item: LINKS
+- item: FRIEND LINKS
   url: /links
   icon: "fa-solid fa-user-group"
