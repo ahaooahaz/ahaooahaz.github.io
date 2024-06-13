@@ -1,12 +1,13 @@
 ---
 author: ahaooahaz
-image:
-urlname: "smart-pointer"
-slug: "smart-pointer"
+image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/1690861870903.webp
+urlname: smart-pointer
+slug: smart-pointer
 date: 2024-06-06T17:09:59+08:00
-title: "智能指针"
-tags: []
-draft: true
+title: 智能指针
+tags:
+  - technical
+draft: false
 ---
 <!--more-->
 

@@ -9,7 +9,7 @@ tags:
   - technical
 ---
 <!--more-->
-容器技术为应用程序提供了完成的运行环境，可以让应用程序在任何支持容器技术的设备上运行。除了docker之外，还有podman等容器技术。
+容器技术为应用程序提供了完整的运行环境，可以让应用程序在任何支持容器技术的设备上运行。除了docker之外，还有podman等容器技术。
 
 容器实现资源层面的限制和隔离依赖Linux内核提供的Control groups和Linux namespace技术。
 
@@ -72,6 +72,7 @@ image:1 2.21GB
 - ONBUILD: 后面跟其他指令，在当前镜像构建时并不会被执行，只有当以当前镜像为基础镜像去构建下一级镜像时才会被执行。
 - LABEL: 为镜像添加元数据。
 - SHELL: 指定RUN、ENTRYPOINT、CMD指令的解释器。
+> 在 `Dockerfile` 中，`ENTRYPOINT` 和 `CMD` **始终**将转换为列表，假设声明`CMD echo hello`，Docker会自动将`CMD`转换为列表，转换后的内容为`["/bin/sh", "-c", "echo hello"]`，这同样适用与`ENTRYPOINT`参数。
 
 # 在容器中运行docker守护进程的方式
 
@@ -81,13 +82,67 @@ image:1 2.21GB
 # docker-compose
 通过一个单独的yaml文件定义一组相关联的服务（容器）组成一个完整的项目。docker-compose的默认管理对象是项目。
 ## 模板文件
-每一个服务（容器）都必须通过image或者build来声明运行的镜像。
+每一个服务（容器）都必须通过image或者build来声明运行的镜像，compose模板文件大部分指令与`docker run`相关参数的含义都是类似的。
 ### build
 指定Dockerfile所在的文件夹路径，docker-compose会自动构建镜像并使用。
 ```yaml
-version: '3'
 services:
   app:
     build: ./dir
 ```
-# kubernetes
+默认会使用文件夹下的Dockerfile文件来构建镜像，也可以指定Dockerfile位置，并指定构建时的参数。
+```yaml
+services:
+
+  webapp:
+    build:
+      context: ./dir
+      dockerfile: Dockerfile-alternate
+      args:
+        buildno: 1
+```
+### image
+直接指定容器运行的镜像名称。
+```yaml
+services:
+
+  webapp:
+    image: webapp:latest
+```
+### container_name
+用来指定容器的名称，需要注意的是Docker不允许多个容器具有相同的容器名称，默认会使用`项目名称_服务名称_序号`来做为容器的名称。
+### command/entrypoint
+可以在compose中设置command或者entrypoint来覆盖镜像中对应的值。
+```yaml
+services:
+
+  webapp:
+    image: webapp:latest
+    entrypoint: python app.py
+    command: -f app
+```
+
+### cap_add/cap_drop/privileged
+#### privileged
+默认情况下，docker中的root用户只是host宿主机的一个普通用户，`provileged=true`可以将宿主机的root权限赋予docker中的root用户。
+#### cap_add/cap_drop
+当需要给docker中的root用户授予一部分权限时，可以通过`cap_add/cap_drop`增加或删除。
+### devices/volumes
+设置宿主机和docker容器之间的挂载内容。
+### environment/env_file
+设置环境变量，可以从声明环境变量文件，也可以直接设置环境变量的值。
+### cgroup_parent
+指定`cgroup`组，容器会继承该组对资源的限制。
+### depends_on
+指定容器启动的先后顺序。
+### dns/dns_search
+自定义DNS服务器。
+### network_mode
+设置网络模式。
+```yaml
+network_mode: "bridge"
+network_mode: "host"
+network_mode: "none"
+network_mode: "service:[service name]"
+network_mode: "container:[container name/id]"
+```
