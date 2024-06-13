@@ -7,6 +7,7 @@ date: 2021-10-12 17:07:18
 title: GOLANG
 tags:
   - technical
+weight: 60
 ---
 
 <!--more-->

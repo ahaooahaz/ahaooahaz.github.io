@@ -8,6 +8,7 @@ title: 买了一辆自行车
 tags:
   - life
 draft: false
+weight: 80
 ---
 
 <!--more-->

@@ -8,6 +8,7 @@ title: Browser
 tags:
   - tools
 draft: false
+weight: 50
 ---
 
 <!--more-->

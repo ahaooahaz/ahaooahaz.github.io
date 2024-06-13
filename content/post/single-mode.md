@@ -7,6 +7,7 @@ date: 2022-01-16 23:30:52
 title: 单例模式
 tags:
   - technical
+weight: 60
 ---
 
 <!--more-->

@@ -8,6 +8,7 @@ title: Use ibus-rime in ubuntu20.04
 tags:
   - tools
 draft: false
+weight: 50
 ---
 <!--more-->
 

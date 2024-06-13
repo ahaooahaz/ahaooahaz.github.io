@@ -1,6 +1,6 @@
 ---
 author: ahaooahaz
-image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/1690861870903.webp
+image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/1690861871031.webp
 urlname: smart-pointer
 slug: smart-pointer
 date: 2024-06-06T17:09:59+08:00
@@ -8,6 +8,7 @@ title: 智能指针
 tags:
   - technical
 draft: false
+weight: 60
 ---
 <!--more-->
 

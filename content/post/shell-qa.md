@@ -7,6 +7,7 @@ date: 2023-03-23 17:36:10
 title: SHELL-QA
 tags:
   - technical
+weight: 60
 ---
 
 <!--more-->
