@@ -1,10 +1,10 @@
 ---
 author: ahaooahaz
-image:
-urlname: "net-protocols-dns"
-slug: "net-protocols-dns"
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dns-raum.svg/800px-Dns-raum.svg.png
+urlname: net-protocols-dns
+slug: net-protocols-dns
 date: 2024-06-18T15:53:24+08:00
-title: "网络协议之DNS协议"
+title: 网络协议之DNS协议
 tags:
   - technical
   - network
