@@ -43,7 +43,11 @@ defaultMode = "light"           # Note that the UI control for toggling darkmode
 logo = ""                       # if the value is an empty string, the site title will be shown instead
 faviconsDir = "images/icons/"   # with a trailing slash
 blogDir = "post"                # edit
-enableGitalk = true
+
+# comment
+enableGitalk = false
+enableUtterances = true
+
 email = "ahaooahaz@outlook.com"
 githash = "${GIT_HASH}"
 copyright = "All Rights Reserved."
@@ -60,6 +64,10 @@ perPage = 15                           # Pagination size, with maximum 100.
 pagerDirection = "last"                # Comment sorting direction, available values are 'last' and 'first'.
 createIssueManually = false            # If it is 'false', it is auto to make a GitHub issue when the administrators login.
 distractionFreeMode = false            # Enable hot key (cmd|ctrl + enter) submit comment.
+
+[params.utterances]
+repo = "ahaooahaz/ahaooahaz.github.io"
+theme = "github-light"
 
 [permalinks]
 post = "/:slug"

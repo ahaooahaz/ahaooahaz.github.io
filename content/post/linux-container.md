@@ -53,9 +53,9 @@ image:1 2.21GB
 ```
 ## 容器
 容器在运行时，会以镜像为基础，在镜像之上再创建一层容器的存储层，生命周期跟随容器的生命周期，任何保存在容器存储层的信息都会随着容器的删除而删除。
-# Dockerfile
+## Dockerfile
 通过一系列的命令来构建镜像。
-## 支持的命令
+### 支持的命令
 - FROM: 指定基础镜像。`scratch`表示一个空白的镜像。
 - RUN: 在上层镜像之上执行特定命令。
 - COPY: 从构建的*上下文目录*中拷贝文件或目录到镜像的指定位置。
@@ -75,7 +75,23 @@ image:1 2.21GB
 - SHELL: 指定RUN、ENTRYPOINT、CMD指令的解释器。
 > 在 `Dockerfile` 中，`ENTRYPOINT` 和 `CMD` **始终**将转换为列表，假设声明`CMD echo hello`，Docker会自动将`CMD`转换为列表，转换后的内容为`["/bin/sh", "-c", "echo hello"]`，这同样适用与`ENTRYPOINT`参数。
 
-# 在容器中运行docker守护进程的方式
+## 网络
+docker会默认创建3个网络，通过`docker network ls`可以查看当前存在的所有网络，容器默认连接到`bridge`网络。
+```bash
+NETWORK ID     NAME      DRIVER    SCOPE
+159d829e8947   bridge    bridge    local
+cea62f1c0e0c   host      host      local
+fcdae83d729c   none      null      local
+```
+### host
+`host`表示容器使用宿主机的IP和端口。
+### bridge
+`bridge`模式会为每一个容器分配、设置IP等，并将容器连接到一个docker0虚拟网桥，通过docker0网桥以及iptables nat表配置与宿主机通信。
+### container
+`container`模式容器与指定的容器共享IP、端口范围。
+### none
+`none`表示关闭容器的网络功能。
+## 在容器中运行docker守护进程的方式
 
 在容器中挂载宿主机的docker.sock，此举实为在使用宿主机上的docker服务，当在运行的容器中运行第二级的容器并进行位置挂载时，源位置则代指宿主机上的位置，并不能将第一级容器内的位置挂载进第二级容器。
 
