@@ -2,7 +2,7 @@
 author: ahaooahaz
 image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/midundao.webp
 urlname: "nathan-road-one-night-good-trip"
-slug: "弥敦道一晚good trip"
+slug: "nathan-road-one-night-good-trip"
 date: 2024-04-25T14:39:23+08:00
 title: "弥敦道一晚good trip"
 tags:
