@@ -163,3 +163,8 @@ network_mode: "none"
 network_mode: "service:[service name]"
 network_mode: "container:[container name/id]"
 ```
+## 技巧
+### 从image反推Dockerfile命令的方法
+```
+docker history <image> --format "table {{.ID}}\t{{.CreatedBy}}" --no-trunc
+```

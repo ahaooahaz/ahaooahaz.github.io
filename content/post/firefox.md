@@ -57,6 +57,6 @@ weight: 80
 参考链接:
 - https://taoshu.in/firefox/vertical-tabs.html
 
-# NOW BRAVE
+# BRAVE
 
 最终又换了brave，因为firefox打开一些跳转级很多的页面时能明显感觉到比chrome慢很多。

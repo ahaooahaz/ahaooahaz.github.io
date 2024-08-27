@@ -91,7 +91,3 @@ validate:
 
 
 **[demo_code](https://github.com/AHAOAHA/Demo/tree/master/golang/proto)**
-
-## 存在的问题
-
-**`google.protobuf.Struct`类型的数据用`proto`反序列化同一个对象产生的二进制数据顺序可能是不同的，但使用`json`或者`jsonpb`是不会出现这样的问题的。**
