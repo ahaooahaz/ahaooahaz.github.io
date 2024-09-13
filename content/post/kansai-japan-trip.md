@@ -7,7 +7,7 @@ date: 2024-08-08T17:30:47+08:00
 title: 日本关西之行
 tags:
   - trip
-draft: true
+draft: false
 weight: 28
 ---
 # 旅行日期
