@@ -13,7 +13,7 @@ paginate = 9 # 首页显示的文章数目.
 [markup]
 [markup.goldmark.renderer]
 hardWraps = false
-unsafe = false    # change to true to enable inclusion of rawHTML and math functions
+unsafe = true    # change to true to enable inclusion of rawHTML and math functions
 xhtml = false
 [markup.highlight]
 codeFences = true
