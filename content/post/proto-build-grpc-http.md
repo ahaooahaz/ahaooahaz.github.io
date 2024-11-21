@@ -14,14 +14,14 @@ weight: 60
 
 ## plugins
 
-| 插件 | 功能 | 版本 | 备注 |
-| --- | --- | --- | --- |
-| `protoc` | 调用编译程序 | `v3.17.3` | |
-| `protoc-gen-go` | 编译message结构体 | `-` | |
-| `protoc-gen-go-grpc` | 编译grpc接口 | `v1.0.1` | |
-| `protoc-gen-grpc-gateway` | 编程http接口 | `-` | |
-| `protoc-gen-swagger` | 生成swagger文档 | `-` | |
-| `protoc-gen-validate` | 生成validate格式校验 | `v0.6.2` | [#570](https://github.com/envoyproxy/protoc-gen-validate/issues/570) |
+| 插件                      | 功能                 | 版本      | 备注                                                                 |
+| ------------------------- | -------------------- | --------- | -------------------------------------------------------------------- |
+| `protoc`                  | 调用编译程序         | `v3.17.3` |                                                                      |
+| `protoc-gen-go`           | 编译message结构体    | `-`       |                                                                      |
+| `protoc-gen-go-grpc`      | 编译grpc接口         | `v1.0.1`  |                                                                      |
+| `protoc-gen-grpc-gateway` | 编程http接口         | `-`       |                                                                      |
+| `protoc-gen-swagger`      | 生成swagger文档      | `-`       |                                                                      |
+| `protoc-gen-validate`     | 生成validate格式校验 | `v0.6.2`  | [#570](https://github.com/envoyproxy/protoc-gen-validate/issues/570) |
 
 ## sample
 
@@ -88,6 +88,5 @@ validate:
 ### `require_unimplemented_servers=false`
 
 新版本的`protoc-gen-go`移除了生成`grpc`代码的功能，生成`grpc`功能独立成为一个工具`protoc-gen-go-grpc`,在`v1.0.0`和`v1.1.0`上通过默认方式产生的`grpc`代码都会包含一个无法实现的接口`mustEmbedUnimplementedServServer`，通过`require_unimplemented_servers=false`可以阻止生成这个接口，[原因得看这里](https://pkg.go.dev/google.golang.org/grpc/cmd/protoc-gen-go-grpc#section-readme)
-
 
 **[demo_code](https://github.com/AHAOAHA/Demo/tree/master/golang/proto)**

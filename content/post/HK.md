@@ -17,11 +17,9 @@ weight: 30
 
 头一天在市内乱逛，第二天去了东部的一个小村子。
 
-{{< figure src="https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/taipingshanding-g.webp" width="60%" >}}
+{{\< figure src="https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/images/taipingshanding-g.webp" width="60%" >}}
 
 在澳门去了赌场，用赌场赠送的红包套现了100多港币。
 
-
 标题来自此音乐
-{{< video "453u20nMAwM" >}}
-
+{{\< video "453u20nMAwM" >}}

@@ -47,9 +47,8 @@ weight: 60
 ```bash
 <fd> <<< <string>
 ```
+
 如果省略`<fd>`，则将`<string>`内容读入标准输出，否则读入`<fd>`文件描述符中。
-
-
 
 # `git commit`由于`gpg`导致失败
 
