@@ -1,6 +1,6 @@
 ---
 author: ahaooahaz
-image: 
+image:
 title: FRIEND LINKS
 urlname: links
 date: 2023-11-22 06:07:18

@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: sort-simple-yaml
+  - repo: local
+    hooks:
+      - id: yamlformat
+        name: yamlformat
+        description: Formats yaml files
+        entry: yamlfmt --conf .yamlfmt
+        language: system
+        types:
+          - yaml
+exclude: |
+  (?x)^(
+      \.vscode\/settings\.json
+      )$

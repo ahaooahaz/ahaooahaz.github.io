@@ -7,12 +7,16 @@ end_of_line = lf # 换行符
 charset = utf-8 # 文档编码格式
 trim_trailing_whitespace = true # true 为去掉行尾空格
 insert_final_newline = true # 结尾是否插入新行
-max_line_length = off # 达到字符数后是否强制换行
 
 [*.{yml,toml,yaml,json}]
+indent_style = space
+indent_size = 2
+
+[*.{html,css}]
 indent_style = space
 indent_size = 2
 
 [*.{md,txt}]
 indent_style = space
 trim_trailing_whitespace = false
+max_line_length = 80 # 达到字符数后是否强制换行
