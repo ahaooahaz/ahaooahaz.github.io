@@ -34,8 +34,8 @@ weight: 80
 69 版本开始，Firefox 默认不再自动加载 userChrome.css 文件。需要手工开启这个特性。
 
 1. 访问 `about:config`
-2. 搜索 `userprof`
-3. 将`toolkit.legacyUserProfileCustomizations.stylesheets`改为`true`
+1. 搜索 `userprof`
+1. 将`toolkit.legacyUserProfileCustomizations.stylesheets`改为`true`
 
 重启FIREFOX即可。
 
@@ -53,8 +53,8 @@ weight: 80
 
 配置目录: https://github.com/ahaooahaz/cascade
 
-
 参考链接:
+
 - https://taoshu.in/firefox/vertical-tabs.html
 
 # BRAVE

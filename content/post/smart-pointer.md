@@ -10,13 +10,19 @@ tags:
 draft: false
 weight: 60
 ---
+
 <!--more-->
 
 智能指针依赖C++自行调用析构函数的特点，使用对象的生命周期来自动管理在堆空间申请的内存。
+
 ## auto_ptr
+
 auto_ptr在C++98中就存在，本身存在明显的问题。
+
 ### 所有权转义
+
 当auto_ptr进行相互赋值操作之后，会进行所有权转移，老的指针会被设置为空指针，后续只能使用新的指针进行解引用等操作。
+
 ```cpp
 #include <memory>
 using namespace std;
@@ -27,10 +33,15 @@ int main() {
 	return 0;
 }
 ```
+
 导致以下问题：
+
 - 不能结合STL容器使用
+
 ### 不适用于管理数组
+
 auto_ptr在析构时使用的方法为`delete`，而当析构数组时，需要使用`delete[]`，所以不能用auto_ptr管理数组指针。
+
 ```cpp
 #include <memory>
 using namespace std;
@@ -42,9 +53,13 @@ int main() {
 	return 0;
 }
 ```
+
 ## unique_ptr
+
 unique_ptr出现于C++11，不支持拷贝和赋值操作，只能通过右值引用的方式转移资源的所有权。默认情况下于`auto_ptr`一样使用`delete`来析构资源，但也可以通过自定义删除器来实现对资源的析构操作，支持lambda表达式实现自定义删除器，同时支持了对数组资源的管理。
+
 ### 删除拷贝构造和赋值操作
+
 ```cpp
 #include <mempry>
 using namespace std;
@@ -57,7 +72,9 @@ int main() {
 	return 0;
 }
 ```
+
 ### 支持管理数组
+
 ```cpp
 #include <memory>
 using namespace std;
@@ -66,7 +83,9 @@ int main() {
 	return 0;
 }
 ```
+
 ### 自定义删除器
+
 ```cpp
 #include <memory>
 #include <iostream>
@@ -89,9 +108,13 @@ int main() {
 }
 
 ```
+
 ## shared_ptr
+
 shared_ptr出现于C++11，采用引用计数的方法，解决了`auto_ptr`和`unique_ptr`存在的问题，同时也支持指定删除器。但`shared_ptr`也存在自己的问题。
+
 ### 循环引用
+
 ```cpp
 #include <memory>
 #include <iostream>
@@ -118,6 +141,9 @@ int main() {
 	return 0;
 }
 ```
+
 当两个类互相持有对方的`shared_ptr`并相互指向时，引用计数会被置为2，当生命周期到达时，会使拥有的`shared_ptr`计数为1，所以并没有执行对应的析构函数，导致内存泄漏。
+
 ## weak_ptr
+
 weak_ptr出现于C++11，用来解决`shared_ptr`的循环引用问题，只能使用`weak_ptr`或者`shared_ptr`构造，`weak_ptr`的赋值操作不会使`shared_ptr`的引用计数变化。`weak_ptr`不能对指针进行解引用操作，类似只读的操作，但可以通过`lock`方法拷贝一个`shared_ptr`进行操作，当资源已经被析构时，调用`lock`方法会返回一个空的`shared_ptr`。

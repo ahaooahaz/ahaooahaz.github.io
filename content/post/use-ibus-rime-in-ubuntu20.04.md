@@ -10,6 +10,7 @@ tags:
 draft: false
 weight: 80
 ---
+
 <!--more-->
 
 从apt安装的ibus-rime版本比较旧，不能支持lua插件的功能，但基本的功能没什么问题，推荐从[ibus-rime.AppImage](https://github.com/hchunhui/ibus-rime.AppImage)来安装，是比较新的版本，也能支持lua插件。
@@ -19,20 +20,24 @@ weight: 80
 > 系统升级到ubuntu20.04之后，在浏览器和一些app中不能法切换ibus输入法了，只能使用fcitx来输入中文
 
 执行`env | grep -E 'XMOD|_IM'`结果为：
+
 ```
 GLFW_IM_MODULE=ibus
 GTK_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
 QT_IM_MODULE=fcitx
 ```
+
 可以看到`GTK_IM_MODULE`、`XMODIFIERS`、`QT_IM_MODULE`这三个环境变量依然是`fcitx`，因为我是用的是ibus框架，所以需要将这三个环境变量声明为`ibus`。
 
 创建`${HOME}/.xprofile`文件，在该文件中声明环境变量：
+
 ```
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 ```
+
 重启后恢复正常。
 
 > 候选框中英文和中文的水平基准线没有对齐

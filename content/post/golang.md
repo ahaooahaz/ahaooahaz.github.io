@@ -133,9 +133,9 @@ func main() {}
 /// go build -buildmode=c-shared -o helloworld.so main.go 生成动态库和头文件
 ```
 
-* **`-buildmode=c-archive`生成静态库**
-* **`-buildmode=c-shared`生成动态库**
-* **`package main`和`main`函数是必须的**
+- **`-buildmode=c-archive`生成静态库**
+- **`-buildmode=c-shared`生成动态库**
+- **`package main`和`main`函数是必须的**
 
 ## 回调函数
 

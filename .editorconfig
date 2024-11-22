@@ -1,12 +1,12 @@
 root = true
 
 [*]
-indent_style = space # 缩进方式
-indent_size = 4 # 缩进大小
-end_of_line = lf # 换行符
-charset = utf-8 # 文档编码格式
-trim_trailing_whitespace = true # true 为去掉行尾空格
-insert_final_newline = true # 结尾是否插入新行
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
 
 [*.{yml,toml,yaml,json}]
 indent_style = space
@@ -19,4 +19,4 @@ indent_size = 2
 [*.{md,txt}]
 indent_style = space
 trim_trailing_whitespace = false
-max_line_length = 80 # 达到字符数后是否强制换行
+max_line_length = 80
