@@ -12,13 +12,6 @@ repos:
         language: system
         types:
           - yaml
-      - id: mdformat
-        name: mdformat
-        description: Formats yaml files
-        entry: mdformat content
-        language: system
-        types:
-          - markdown
 exclude: |
   (?x)^(
       \.vscode\/settings\.json|
