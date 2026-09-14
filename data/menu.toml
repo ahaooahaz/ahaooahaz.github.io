@@ -1,0 +1,20 @@
+[[entries]]
+title = "all posts"
+
+[entries.post_list]
+limit = 9
+show_more = true
+show_more_text = "..."
+show_more_url = "posts"
+
+[[entries]]
+title = "rss"
+url = "index.xml"
+
+[[entries]]
+title = "about"
+entries = [
+  { title = "<a href='about/EN/'>me</a>" },
+  { title = "<a href='https://github.com/ahaooahaz'>github</a>" },
+  { title = "<a href='https://www.v2ex.com/?r=ahaooahaz'>v2ex</a>" },
+]

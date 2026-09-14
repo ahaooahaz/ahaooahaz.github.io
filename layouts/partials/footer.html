@@ -1,0 +1,11 @@
+{{ if site.Params.theme_config.isShowFooter }}
+<footer class="footer wrap pale">
+  <div style="text-align: center;">
+    <p style="margin: 0;">&copy;&nbsp;{{ now.Format "2006" }}&nbsp;<a href="{{ site.Params.copyrighturl }}" style="text-decoration: none;">{{ site.Params.copyright }}</a></p>
+  </div>
+  <div style="text-align: right; display: flex; justify-content: flex-end; align-items: center;">
+    <img src="/images/written-by-human/svg/Written-By-Humans-Not-By-AI-Badge-black.svg" alt="Written by Humans" style="height: 20px; margin-right: 8px; display: inline;">
+    <img src="https://www.easycounter.com/counter.php?ahaooahaz" border="0" alt="Hit Counters" style="margin: 7px 0; display: inline;">
+  </div>
+</footer>
+{{ end }}

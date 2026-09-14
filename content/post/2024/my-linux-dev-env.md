@@ -4,7 +4,7 @@ image: https://banner2.cleanpng.com/20180525/thc/avqp19j0v.webp
 urlname: my-linux-dev-env
 slug: my-linux-dev-env
 date: 2024-01-25T15:59:24+08:00
-title: 开发环境介绍
+title: 我的开发环境 Annal
 tags:
   - tools
 draft: false

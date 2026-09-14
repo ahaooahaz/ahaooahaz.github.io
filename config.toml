@@ -1,0 +1,24 @@
+baseurl = "https://ahaooahaz.github.io/"
+title = "AHOW"
+author = "ahaooahaz"
+theme = "nostyleplease"
+
+[params]
+Copyright = "ahaooahaz"
+CopyrightURL = "https://github.com/ahaooahaz"
+footer_easycounter_href = "https://www.easycounter.com/"
+favicon = "https://avatars.githubusercontent.com/u/33903789"
+
+[params.theme_config]
+isListGroupByDate = true
+isShowFooter = true
+
+[security]
+allowContent = [
+  "text/html",
+  "text/markdown",
+  "text/plain",
+  "application/json",
+  "application/yaml",
+  "text/yaml",
+]
