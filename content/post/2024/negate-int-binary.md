@@ -4,7 +4,7 @@ image: https://media.githubusercontent.com/media/irisHYT/ImageHosting0/main/imag
 urlname: negate-int-binary
 slug: negate-int-binary
 date: 2021-11-25 14:19:50
-title: 数字存储与计算
+title: 数字在计算机中的存储与计算
 tags:
   - technical
 mathjax: true
