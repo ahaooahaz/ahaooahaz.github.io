@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode }}">
+    {{- partial "head.html" . -}}
+    <body a="{{ $.Site.Params.theme_config.appearance | default "auto" }}">
+        <script>
+            // 读取 localStorage 覆盖默认外观
+            (function() {
+                var saved = localStorage.getItem('theme');
+                if (saved === 'dark' || saved === 'light') {
+                    document.body.setAttribute('a', saved);
+                }
+            })();
+        </script>
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+                {{- block "main" . }}{{- end }}
+                {{ partial "footer.html" }}
+            </div>
+        </main>
+
+        <script>
+            // 亮色/暗色切换按钮
+            document.addEventListener('DOMContentLoaded', function() {
+                var toggle = document.getElementById('theme-toggle');
+                if (toggle) {
+                    toggle.addEventListener('click', function() {
+                        var current = document.body.getAttribute('a');
+                        var next = (current === 'dark') ? 'light' : 'dark';
+                        document.body.setAttribute('a', next);
+                        localStorage.setItem('theme', next);
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>

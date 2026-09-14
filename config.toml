@@ -12,6 +12,7 @@ favicon = "https://avatars.githubusercontent.com/u/33903789"
 [params.theme_config]
 isListGroupByDate = true
 isShowFooter = true
+appearance = "light"
 
 [security]
 allowContent = [
