@@ -15,7 +15,7 @@ url = "index.xml"
 [[entries]]
 title = "about"
 entries = [
-  { title = "<a href='about/EN/'>me</a>" },
+  { title = "<a href='about/en/'>me</a>" },
   { title = "<a href='https://github.com/ahaooahaz'>github</a>" },
   { title = "<a href='https://www.v2ex.com/?r=ahaooahaz'>v2ex</a>" },
 ]
