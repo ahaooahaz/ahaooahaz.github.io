@@ -2,6 +2,7 @@
 title = "all posts"
 
 [entries.post_list]
+section = "post"
 limit = 9
 show_more = true
 show_more_text = "..."
