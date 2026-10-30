@@ -1,0 +1,38 @@
+/* Give article text more breathing room without changing other typography. */
+article p:not(.post-meta),
+article li {
+  line-height: 1.6;
+}
+
+/* Keep code blocks' original line height and soften their corners. */
+article pre {
+  line-height: 1.4;
+  border-radius: 6px;
+}
+
+/* Soften inline code in both themes; leave code blocks and MathJax alone. */
+body code:not(pre > code):not(.has-jax) {
+  background-color: rgba(127, 127, 127, 0.15);
+  color: inherit;
+  border-radius: 4px;
+  padding: 0.1em 0.3em;
+}
+
+/* Mark the end of an article before the site footer. */
+.post-end {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0 2rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  color: inherit;
+  opacity: 0.55;
+}
+
+.post-end::before,
+.post-end::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid currentColor;
+}

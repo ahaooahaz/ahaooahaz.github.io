@@ -14,6 +14,9 @@
         <main class="page-content" aria-label="Content">
             <div class="w">
                 {{- block "main" . }}{{- end }}
+                {{ if and .IsPage (eq .Section "post") }}
+                    {{ partial "post_end.html" . }}
+                {{ end }}
                 {{ partial "footer.html" }}
             </div>
         </main>
